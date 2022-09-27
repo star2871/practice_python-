@@ -7,7 +7,6 @@ res = []
 # 단어의 수만큼 반복하면 단어를 확인
 for _ in range(N):
     s = list(map(str, sys.stdin.readline().strip()))
-
     stack = [0]
     # 반복문으로 문자열을 확인
     for i in s:

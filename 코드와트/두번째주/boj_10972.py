@@ -11,7 +11,7 @@ for i in range(N-1, 0, -1):
         for j in range(N-1, 0, -1):
             if M[i-1] < M[j]:
                 M[i-1], M[j] = M[j], M[i-1]  # 간단한 스왑
-                M = M[:i] + sorted(M[i:])  # 이 부분 떄문에 헤맴
+                M = M[:i] + sorted(M[i:])
                 find = True
                 break
     if find:
